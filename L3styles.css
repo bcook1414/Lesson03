@@ -3,8 +3,43 @@ html{
     background-color: lightblue;
     
 }
+#navbar{
+    width: 100%;
+}
+#nav, #nav ul {
+    padding-top: 25px;
+    padding-left: 10px;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+}
+#nav a{
+    padding: 15px 5px;
+    display: block;
+    width: 175px;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    background-color:darkblue;
+    border-radius: 10px;
+
+}
+#nav li{
+    float: left;
+    width: 200px;
+}
+#nav li ul{
+    position: absolute;
+    width: 130px;
+    left: -999em;
+
+}
+#nav li:hover ul{
+    left: auto;
+}
+
 header{
-    background-color: rgb(76, 76, 182);
+    background-color: rgb(132, 132, 179);
     padding: 20px;
     border-color: darkblue;
     border-radius: 10px;
@@ -144,7 +179,7 @@ text-align: center;
     width: 21.5%;
 }
 #bottom{
-    background-color:  rgb(112, 112, 117);
+    background-color:  rgb(28, 67, 110);
     padding-bottom: 10px;
     padding-top: 10px;
     margin-bottom: -20px;
@@ -155,7 +190,9 @@ text-align: center;
     text-align: center;
     font-size: 25pt;
 }
-
+ul{
+    list-style: none;
+}
 footer{
     text-align:  center;
     background-color: rgb(112, 112, 117);
