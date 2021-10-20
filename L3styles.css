@@ -5,6 +5,7 @@ html{
 }
 #navbar{
     width: 100%;
+   
 }
 #nav, #nav ul {
     padding-top: 25px;
@@ -12,7 +13,12 @@ html{
     margin: 0;
     list-style: none;
     line-height: 1;
+    
 }
+#nav li:hover ul{
+    left: auto;
+    background-color: rgb(14, 44, 77);
+    }
 #nav a{
     padding: 15px 5px;
     display: block;
@@ -20,13 +26,14 @@ html{
     text-align: center;
     color:white;
     text-decoration: none;
-    background-color:darkblue;
+    background-color:rgb(37, 102, 172);
     border-radius: 10px;
 
 }
 #nav li{
     float: left;
     width: 200px;
+    padding-top: 10px;
 }
 #nav li ul{
     position: absolute;
@@ -34,15 +41,14 @@ html{
     left: -999em;
 
 }
-#nav li:hover ul{
-    left: auto;
-}
 
 header{
-    background-color: rgb(132, 132, 179);
+    background-color: rgb(28, 67, 110);
     padding: 20px;
-    border-color: darkblue;
-    border-radius: 10px;
+    border: solid;
+   border-color: rgb(116, 115, 115);
+   border-width: 5px;
+   border-radius: 10px;
     text-align: center;
 }
 
@@ -50,7 +56,7 @@ h1{
     text-align: center;
     font-size: 65pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(252, 235, 4);
+    color: rgb(116, 115, 115);
     text-shadow: 4px 4px 4px darkblue;
 
 }
@@ -85,80 +91,112 @@ h1{
     text-align: center;
     font-size: 16pt;
 }
-#div1{
-    margin-right: 51%;
-    text-align: center;
+.rose{
+    float: left;
+    padding: 15px;
+   width: 450px;
 }
-#div2{
-    margin-left: 51%;
-    text-align: center;
-    align-content: flex-end;
-    float: top right;
+.rose img{
+    max-height: 500px;
 }
-#div5{
-    margin-left: 51%;
-    text-align: center;
-    align-items: baseline;
+.jvj{
+    float: left;
+    padding: 15px;
+    width: 450px;
 }
-#div6{
-margin-right: 51%;
-text-align: center;
+.jvj img{
+    max-height: 500px;
 }
-#div7{
-    text-align: center;
+.bev img{
+    max-height: 500px;
 }
-#jvj{
-    height: 50%;
-    width: 50%;
+.bev{
+    float: left;
+    padding: 15px;
+    width: 450px;
 }
-#rose{
-    height: 50%;
-    width: 50%;
-    
+.YT img{
+    max-width: 600px;
 }
-#YT{
-    height: 50%;
-    width: 50%;
+.YT {
+    float: left;
+    align-self: center;
+    padding: 15px;
+    width: 450px;
 }
-#VE{
-    height: 50%;
-    width: 50%;
+.CC img{
+    max-height: 500px;
 }
-#CC{
-    height: 35%;
-    width: 35%;
+.CC{
+    clear: both;
+    padding: 15px;
+    width: 450px;
 }
-#div3{
-    background-color: rgba(100, 133, 226, 0.842);
-    margin-right: 51%;
-    font-size: 14pt;
-    padding: 10px;
-    border: solid 5px darkblue;
-    border-radius: 10px;
-  
-}
-#div4{
-    background-color: rgba(100, 133, 226, 0.842);
-    margin-left: 51%;
-    margin-top: -237px;
-    border-width: 10px;
-    border-color: darkblue;
-    padding: 10px;
-    padding-bottom: 8px;
-    border: solid 5px darkblue;
-    border-radius: 10px;
+
+.work{
+    display: flex;
+    flex: 1 1 300px;
 
 }
+.portfolio{
+    text-align: center;
+    border: solid 5px;
+    border-color: rgb(28, 67, 110);
+    border-radius: 5px;
+    margin: 5px;
+}
+.projects{
+ display: flexbox; 
+    background-color:rgb(37, 102, 172);
+    max-width: 100%;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.projects h3{
+    align-content: center;
+}
+.projects p{
+    align-content: center;
+}
+.projects a{
+    text-align: center;
+}
+.work{
+    display: flex;
+    background-color: rgb(28, 67, 110);
+    border: solid 3px rgb(116, 115, 115);
+    flex: 1 1 750px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+
+}
+.work-item{
+    text-align: center;
+    border: dashed 10px 10px blue;
+    
+}
+.work-item p{
+    max-width: auto;
+}
+.job{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    align-content: center;
+}
+.job-details{
+    padding-left: 25px;
+}
+.tasks{
+    float: right;
+    max-width: 750px;
+    align-items: center;
+}
+    
 #divpic{
    text-align: center;
    padding: 20px;
-}
-#LRD{
-    text-align: center;
-    font-size: 17pt;
-}
-#WE{
-    text-align: center;
 }
 
 #CW{
@@ -184,18 +222,28 @@ text-align: center;
     padding-top: 10px;
     margin-bottom: -20px;
     padding-left: 15px;
+    color: white;
+    border: solid 3px rgb(116, 115, 115);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 #ED{
     text-align: center;
     font-size: 25pt;
 }
-ul{
+footer ul{
     list-style: none;
+    text-decoration: none;
+    color: white;
 }
+
 footer{
     text-align:  center;
-    background-color: rgb(112, 112, 117);
+    background-color: rgb(37, 102, 172);
     padding-bottom: 10px;
+    text-decoration: none;
+    border: solid 5px rgb(28, 67, 110); 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
